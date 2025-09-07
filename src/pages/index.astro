@@ -1,0 +1,50 @@
+---
+import Paragraph from '../components/Paragraph.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+
+import Button from '../components/Button';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { FaThreads } from 'react-icons/fa6';
+---
+
+<BaseLayout>
+  <Paragraph />
+  <Paragraph title="shop 👕" ad="shop-xl" />
+  <Paragraph title="news 📰">
+    <PostList skip={0} take={3} />
+    <Button text="all news" href="/ps/1" />
+  </Paragraph>
+  <Paragraph title="whores army 💬">
+    chad <a href="/whores-army">here</a> with my other follows
+  </Paragraph>
+  <Paragraph title="follow 👥">
+    look <a href="/follow">here</a> how you can get a follow bag from me
+  </Paragraph>
+  <Paragraph title="contact 📧">
+    look <a href="/contact">here</a> for contact
+  </Paragraph>
+  <Paragraph title="tip from the day 💡">
+    if you want to bye something in my <a
+      href="https://shop.gurlslife.com"
+      target="_blank">shop</a
+    >, order together with friends to split the shiping ❤️
+  </Paragraph>
+  <Paragraph title="my socials 📱">
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/gurls.life_/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;gurls.life_
+    </a>
+    <a
+      class="flex items-center mb-2"
+      href="https://www.instagram.com/meiden.life_/"
+      target="_blank"
+    >
+      <FaInstagram />&nbsp;meiden.life_ 🇱🇺
+    </a>
+  </Paragraph>
+  <Paragraph ad="shop-img" />
+</BaseLayout>
