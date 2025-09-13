@@ -1,0 +1,8 @@
+---
+import Redirect from '../components/Redirect';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="news">
+  <Redirect url="/ps/1" client:only="react" />
+</BaseLayout>
